@@ -8,16 +8,16 @@ public class ButtonPressed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.onButtonClick += buttonPressed;
+        GameManager_v2.onButtonClick += buttonPressed;
     }
     
 
     public void buttonPressed()
     {
         Debug.Log("ButtonPressed.");
-        GameManager.Instance.PrintMessage();
+        //GameManager_v2.Instance.PrintMessage();
 
-        GameManager.Instance.AddTreeOfType(tree_types.Fur);
+        //GameManager_v2.Instance.AddTreeOfType(tree_types_v2.Fur);
 
 
         //GameManager.PrintMessage();
